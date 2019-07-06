@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Форма заявки</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-wrap">
+  
+  <div class="profile"><img src="https://html5book.ru/wp-content/uploads/2016/10/profile-image.png">
+    <h1>Форма заявки</h1>
+  </div>
+  
+  <h2>Общие данные по заявителю</h2>
+  
+  <form method="post" action="form.php">
+    <div>
+      <label for="surname">Фамилия</label>
+      <input type="text" name="surname" required>
+    </div>
+	
+	<div>
+	  <label for="name">Имя</label>
+	  <input type="text" name="name" required>
+	</div>
+	
+	<div>
+	  <label for="fathername">Отчество</label>
+	  <input type="text" name="fathername" required>
+	</div>
+	
+	<div>
+	  <label for="passport_num1">Серия</label>
+	  <input type="text" name="passport_num1" required>
+	</div>
+	
+	<div>
+	  <label for="passport_num2">Номер</label>
+	  <input type="text" name="passport_num2" required>
+	</div>
+	
+	<div>
+	  <label for="passport_where">Кем выдано</label>
+	  <input type="text" name="passport_where" required>
+	</div>
+	
+	
+	<div>
+	  <label for="passport_when">Когда выдано</label>
+	  <input type="text" name="passport_when" required>
+	</div>
+    
+	<div class="radio">
+      <span>Пол</span>
+      <label>
+        <input type="radio" name="sex" value="мужской">мужской
+        <div class="radio-control male"></div>
+      </label>
+      <label>
+        <input type="radio" name="sex" value="женский">женский
+        <div class="radio-control female"></div>
+      </label>
+    </div>
+    
+	<div>
+      <label for="email">E-mail</label>
+      <input type="email" name="email" required>
+    </div>
+    
+	<div>
+      <label for="mail_address">Адрес проживания</label>
+      <input type="text" name="mail_address" required>
+    </div>
+	
+	<h2>Данные по бизнес-плану</h2>
+	
+	<div>
+      <label for="volume_selhoz">Увеличение объёмов производства продукции:</label>
+      <select name="volume_selhoz">
+        <option>Выберите число процентов</option>
+        <option value="Россия">До 10 процентов</option> 
+        <option value="Украина">От 10 до 15 процентов</option> 
+        <option value="Беларусь">Свыше 15 процентов</option> 
+      </select> 
+      <div class="select-arrow"></div> 
+    </div> 
+	
+	<div>
+      <label for="volume_selhoz">Наличие земельного участка:</label>
+      <select name="volume_selhoz">
+        <option>Выберите один из вариантов</option>
+        <option value="Россия">Собственность или аренда</option> 
+        <option value="Украина">Нет собственности или аренды</option> 
+      </select> 
+      <div class="select-arrow"></div> 
+    </div> 
+	
+	<div>
+      <label for="volume_selhoz">Наличие трудового стажа:</label>
+      <select name="volume_selhoz">
+        <option>Выберите один из вариантов</option>
+        <option value="Россия">От 3 до 6 лет</option> 
+        <option value="Украина">От 6 до 10 лет</option> 
+        <option value="Украина">Свыше 10 лет</option>  
+        <option value="Украина">Нет</option> 
+      </select> 
+      <div class="select-arrow"></div> 
+    </div> 
+    
+	<button type="submit">Отправить</button> 
+  </form> 
+  
+</div>
+
+</body>
+</html>
