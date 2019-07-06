@@ -1,9 +1,11 @@
-from django.conf.urls import patterns, include, url
+from django.urls import include, path
 from django.contrib import admin
 
-urlpatterns = patterns('',
-    url(r'^polls/', include('polls.urls')),
-    url(r'^admin/', include(admin.site.urls)),
-)
+from django.http import HttpResponse
+
+
+def index(request):
+    return HttpResponse("Hello, world. You're at the contacts index.")
+
 
 # Create your views here.
